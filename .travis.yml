@@ -1,0 +1,32 @@
+language: python
+sudo: false
+cache: pip
+python:
+  - "3.6"
+
+branches:
+  only:
+  - master
+
+before_install:
+  - python --version
+  - uname -a
+  - lsb_release -a
+
+install:
+  - pip install tox
+  - pip install coveralls
+  - virtualenv --version
+  - easy_install --version
+  - pip --version
+  - tox --version
+
+script:
+  - tox -e coveralls
+
+after_failure:
+  - more .tox/log/* | cat
+  - more .tox/*/log/* | cat
+
+after_success:
+  coveralls
