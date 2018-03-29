@@ -1,0 +1,11 @@
+.idea/
+*.cache
+*.pyc
+venv
+/.tox/
+/shadow_loop.egg-info/
+/build/
+/dist/
+/.eggs/
+.coverage
+*.pytest_cache/
