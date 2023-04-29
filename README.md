@@ -1,6 +1,4 @@
 # shadow-loop
-[![Build Status](https://travis-ci.org/isanich/shadow-loop.svg?branch=master)](https://travis-ci.org/isanich/shadow-loop)
-[![Coverage Status](https://coveralls.io/repos/github/isanich/shadow-loop/badge.svg?branch=master)](https://coveralls.io/github/isanich/shadow-loop?branch=master)
 
 Python 3.6+
 
